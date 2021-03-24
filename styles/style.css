@@ -18,7 +18,7 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     background-image: url(../assets/landscape.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,6 +133,13 @@ button {
     display: inline-block;
     font-size: 12px;
     border-radius: 5px;
+}
+
+.results {
+    font-size: 1.3rem;
+    font-style: bold;
+    padding: 15px 32px;
+    margin: 10px;
 }
   
   @keyframes pulse {
