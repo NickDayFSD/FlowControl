@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { isYes } from './utils'
+import { isYes } from './utils.js';
 
 const button = document.getElementById('quiz-button');
 const results = document.getElementById('results');
@@ -24,15 +24,17 @@ button.addEventListener('click', () => {
     let score = 0;
     // ask questions
     const firstAnswer = prompt ("Does Nick write?");
-    const secondAnswer = promt ("Has Nick lived in 3 different states?")
-    const thirdAnswer = promt ("Dose Nick like the outdoors?")
+    const secondAnswer = prompt ("Has Nick lived in 3 different states?");
+    const thirdAnswer = prompt ("Does Nick like the outdoors?");
 
     //score if (isYes()) score ++
-    if (isYes(firstAnswer)) score++
-    if (!isYes(secondAnswer)) score++
-    if (isYes(thirdAnswer)) score++
+    if (isYes(firstAnswer)) score++;
+    if (!isYes(secondAnswer)) score++;
+    if (isYes(thirdAnswer)) score++;
     // display results
-    const results = `${name}, you scored ${score} out of 3!`
+    const resultsReadout = `${name}, you scored ${score} out of 3!`;
     alert(`${name}, the quiz is complete! Your results will be displayed on the website.`);
+
     // how? 'textContent = results'
-})
+    results.textContent = resultsReadout
+});
