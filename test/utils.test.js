@@ -16,6 +16,6 @@ test('take in a string and return true if the string starts with a y', (expect) 
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected, 'yes returns true');
-    expect.equal(isYes('Yaaaaaas'), true, 'Yaaaaaas returns true')
-    expect.equal(isYes('nope!'), false, 'nope! returns false')
+    expect.equal(isYes('Yaaaaaas'), true, 'Yaaaaaas returns true');
+    expect.equal(isYes('nope!'), false, 'nope! returns false');
 });
