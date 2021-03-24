@@ -19,7 +19,11 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-image: url(../assets/landscape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 main {
@@ -31,7 +35,7 @@ main {
 }
 
 section {
-    background-color: var(--color5);
+    background-color: rgba(255, 235, 205, .5);
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -43,6 +47,7 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    border-radius: 10px;
 }
 
 header {
@@ -80,15 +85,22 @@ h3 {
 }
 
 header img {
-    height: var(--header-height);
+    margin: 15px;
+    padding: 15px 32px
 }
 
 ul {
     list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 ol {
-    list-style-type:upper-latin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: decimal;
 }
 
 content {
@@ -97,6 +109,7 @@ content {
 
 p {
     margin: var(--gutter);
+    font-size: 1.2rem;
 }
   
 footer {
@@ -108,6 +121,18 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+button {
+    background-color:darkcyan;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
 }
   
   @keyframes pulse {
